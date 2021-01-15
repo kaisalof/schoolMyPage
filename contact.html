@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact - Kaisa Löfman</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="author" content="Kaisa Löfman">
+    <meta name="description" content="I'm Kaisa Löfman, I have my final year studies left in Software Engineering. 
+        This is my page where I share my skills and little bit something about my hobbies too.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/contactstyles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kaisa Löfman</h1>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!--<h2>Contact</h2>-->
+    <section>
+        <div id="mailsome">
+            <a id="myMail" href="mailto:kaisalofman@live.com">kaisalofman@live.com</a><br><br>
+
+            <a href="https://www.linkedin.com/in/kaisalofman/">
+                <img src="Images/LI-In-Bug.png" alt="Link to Kaisa Löfman's LinkedIn page" id="liImage">www.linkedin.com/in/kaisalofman</a><br>
+
+            <a href="https://www.instagram.com/kaisalofman/">
+                <img src="Images/igLogo.png" alt="Link to Kaisa Löfman's Instagram page" class="igImage">www.instagram.com/kaisalofman</a><br>
+
+            <a href="https://www.instagram.com/kaisa_knits/">
+                <img src="Images/igLogo.png" alt="Link to Kaisa's diy Instagram page" class="igImage">www.instagram.com/kaisa_knits</a>
+
+        </div>
+        <div id="contactMe">
+            <form onsubmit="return showInput(this)">
+                <!-- action="contact.html">-->
+                <fieldset class="fieldset-auto-width">
+                    <legend>Contact me</legend>
+
+                    <label for="firstName">First name:</label><br>
+                    <input type="text" id="firstName" name="firstName" maxlength="25" required="required"><br>
+
+                    <label for="lastName">Last name:</label><br>
+                    <input type="text" id="lastName" name="lastName" maxlength="25" required="required"><br>
+
+                    <label for="gender">Gender:</label><br>
+                    <select id="gender" name="gender">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Other">Other</option>
+                </select><br>
+
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="18" max="100" required="required"><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" maxlength="50" required="required"><br>
+
+                    <label for="website">Website:</label><br>
+                    <input type="url" id="website" name="website" maxlength="50" required="required"><br>
+
+                    <label for="comment">Comment:</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="50" maxlength="255"></textarea><br>
+
+                    <input type="submit" value="Submit" id="submit">
+
+                    <input type="reset" id="reset">
+                </fieldset>
+            </form>
+        </div>
+
+    </section>
+    <p id="output">
+        <span id="showName"></span><br>
+        <span id="showGender"></span><br>
+        <span id="showAge"></span><br>
+        <span id="showEmail"></span><br>
+        <span id="showWeb"></span><br>
+        <span id="showComment"></span>
+    </p>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="JS/contactscript.js"></script>
+    <!--
+
+After submit, you need to validate all the information, and finally show at the bottom
+
+of the page. 
+-->
+</body>
+
+</html>

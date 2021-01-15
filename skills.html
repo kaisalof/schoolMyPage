@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Skills - Kaisa Löfman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="author" content="Kaisa Löfman">
+    <meta name="description" content="I'm Kaisa Löfman, I have my final year studies left in Software Engineering. 
+        This is my page where I share my skills and little bit something about my hobbies too.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/skillsstyles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Kaisa Löfman</h1>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+    <div id="skills">
+        <div id="itskills">
+            <h2>Skills</h2>
+            <ul>
+                <li class="threestars">
+                    HTML
+                </li>
+                <li class="threestars">
+                    CSS
+                </li>
+                <li class="threestars">
+                    JavaScript
+                </li>
+                <li class="twostars">
+                    Java
+                </li>
+                <li class="onestar">
+                    Unity
+                </li>
+                <li class="onestar">
+                    Kotlin
+                </li>
+                <li class="onestar">
+                    C
+                </li>
+                <li class="onestar">
+                    C#
+                </li>
+                <li class="onestar">
+                    C++
+                </li>
+                <li class="onestar">
+                    Python
+                </li>
+                <li class="onestar">
+                    MySQL
+                </li>
+                <li class="fourstars">
+                    MS Office
+                </li>
+            </ul>
+        </div>
+
+        <div id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li class="fivestars">
+                    Finnish
+                </li>
+                <li class="fourstars">
+                    English
+                </li>
+                <li class="onestar">
+                    Swedish
+                </li>
+            </ul>
+            <img src="Images/unitytrack.png" alt="Track from Unity">
+        </div>
+
+    </div>
+    <!--Form to add skill-->
+    <form class="adding" id="addskill" action="skills.html">
+
+        <p id="addTitle">Add skill</p>
+
+
+        <div id="radioType">
+            <p id="choose"></p>
+            Skill type:<br>
+            <input type="radio" name="stype" value="itskill" id="r1">
+            <label for="itskill">IT skill</label>
+            <input type="radio" name="stype" value="languageskill" id="r2">
+            <label for="languageskill">Language skill</label>
+        </div>
+        <div>
+            <label for="skillname">Skill: </label>
+            <input type="text" id="sname" name="sname"></div>
+
+        <div>Level:</label>
+            <select name="stars" id="stars">
+                        <option value="1">1</option>   
+                        <option value="2">2</option>   
+                        <option value="3">3</option>   
+                        <option value="4">4</option>   
+                        <option value="5">5</option>   
+                    </select>
+        </div>
+
+        <div>
+            <input type="button" onclick="submitForm()" value="ADD">
+        </div>
+    </form>
+
+    <footer id="cvs">
+        <h3>Links to download my CV:</h3>
+        <a href="CV_english.pdf" download>PDF version</a>
+        <a href="CV_english.docx" download>DOC version</a>
+    </footer>
+
+    <script type="text/javascript" src="JS/skillscripts.js"></script>
+</body>
+
+</html>

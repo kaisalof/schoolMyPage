@@ -1,0 +1,66 @@
+.homePage {
+    height: 600px;
+}
+
+#introduction {
+    max-height: 100%;
+    margin: 20px;
+}
+
+#homeImg {
+    width: 25%;
+    float: left;
+}
+
+#introduction img {
+    width: 100%;
+    border: 10px solid white;
+}
+
+#homeText {
+    width: 75%;
+    float: left;
+}
+
+#introduction p {
+    padding-left: 30px;
+    width: 100%;
+}
+
+#homefooter,
+.showMe {
+    background-color: #2A7E89;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    font-size: 120%;
+    height: 50px;
+}
+
+@media screen and (max-width:1100px) {
+    .homePage {
+        height: 800px;
+    }
+    #homeImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #introduction img {
+        width: 256.75px;
+        height: 351.72px
+    }
+    #homeText {
+        width: 100%;
+    }
+    #introduction p {
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .homePage {
+        height: 1200px;
+    }
+}

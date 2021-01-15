@@ -1,0 +1,118 @@
+#skills {
+    height: 750px;
+    display: flex;
+    justify-content: center;
+}
+
+#skills h2 {
+    border-bottom: 1px solid darkgrey;
+}
+
+#itskills,
+#languages {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin: 10px 10px;
+    background-color: #d8eff3;
+}
+
+#languages img {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+    border: 10px solid white;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 8%;
+}
+
+ul li {
+    padding-bottom: 20px;
+}
+
+ul li p {
+    font-size: 20px;
+}
+
+#addskill {
+    border-top: 1px solid darkgrey;
+}
+
+.adding {
+    margin: 15px;
+}
+
+.adding p,
+.adding div {
+    margin: 15px;
+}
+
+#addTitle {
+    color: white;
+    background-color: #2A7E89;
+    width: 150px;
+    height: 35px;
+    margin: 30px 0px 0px 40px;
+}
+
+.adding p {
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#button {
+    align-items: center;
+}
+
+#cvs {
+    /*border-top: 1px solid darkgrey;*/
+    text-align: center;
+    color: #EBF7F9;
+    background-color: #2A7E89;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+#cvs h3 {
+    border-bottom: 1px solid #EBF7F9;
+    padding: 10px 0;
+}
+
+#cvs a {
+    color: #EBF7F9;
+    margin: 15px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:600px) {
+    #skills {
+        height: 1200px;
+        display: table;
+    }
+    #itskills {
+        width: 100%;
+        margin: 5px 0;
+        padding: 0;
+    }
+    #languages {
+        width: 100%;
+        margin: 5px 0;
+        padding: 0;
+    }
+    #languages img {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #skills {
+        height: 1000px;
+    }
+}

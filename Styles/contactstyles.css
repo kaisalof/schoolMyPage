@@ -1,0 +1,116 @@
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#contactMe {
+    margin: 20px;
+    margin-left: 2%;
+    margin-right: 5%;
+    float: left;
+    height: 500px;
+    padding: 0;
+    width: 50%;
+}
+
+#contactMe legend {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#contactMe label {
+    font-size: 110%;
+}
+
+#contactMe input,
+#contactMe select,
+#contactMe textarea {
+    margin-bottom: 10px;
+}
+
+#gender,
+#submit,
+#reset {
+    font-family: 'Candara', sans-serif;
+    font-size: 105%;
+}
+
+#comment {
+    width: 300px;
+}
+
+#mailsome {
+    float: left;
+    padding: 50px;
+    padding-top: 125px;
+    margin: 20px;
+    margin-left: 5%;
+    margin-right: 2%;
+    width: 50%;
+    height: 500px;
+    background-color: #18484E;
+    text-align: center;
+}
+
+#mailsome a {
+    color: #EBF7F9;
+    text-decoration: none;
+}
+
+#liImage {
+    height: 32px;
+    width: auto;
+    margin: 18px;
+    vertical-align: -28px;
+}
+
+.igImage {
+    width: 35px;
+    height: 35px;
+    margin: 18px;
+    vertical-align: -32px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#output {
+    color: #EBF7F9;
+    background-color: #2A7E89;
+    padding: 10px;
+    width: 100%;
+}
+
+@media screen and (max-width:941px) {
+    #mailsome {
+        padding-top: 75px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    section {
+        display: table;
+        width: 100%;
+    }
+    #contactMe,
+    #mailsome {
+        margin: 10px 0px;
+        width: 100%;
+        height: auto;
+    }
+    #mailsome {
+        padding: 20px 0 10px 0;
+    }
+}
+
+@media screen and (max-width:365px) {
+    #comment {
+        width: 200px;
+    }
+}

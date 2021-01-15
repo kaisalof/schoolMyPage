@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery - Kaisa Löfman</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="author" content="Kaisa Löfman">
+    <meta name="description" content="I'm Kaisa Löfman, I have my final year studies left in Software Engineering. 
+        This is my page where I share my skills and little bit something about my hobbies too.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/simple-slideshow-styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kaisa Löfman</h1>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <h2>Gallery</h2>
+    <p>Here are photos I have taken with my phone. Some of them are landscapes from Helsinki and Tampere and there is also pics of some handicrafts I have made. Someday I will buy a good camera and start to take beautiful pictures.
+    </p>
+    <div id="gallery">
+        <div class="bss-slides num1" tabindex="1" autofocus="autofocus">
+            <figure>
+                <img src="Images/greenbeanie.jpg" width="100%" />
+                <figcaption><a href="Images/greenbeanie.jpg">Handmade green beanie</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/greenyellowbeanie.jpg" width="100%" />
+                <figcaption><a href="Images/greenyellowbeanie.jpg">Handmade green and yellow beanies</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/hoothoot.jpg" width="100%" />
+                <figcaption><a href="Images/hoothoot.jpg">Handmade owl beanie, hoot hoot</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/kassari.jpg" width="100%" />
+                <figcaption><a href="Images/kassari.jpg">Sunny weather in Kasinonranta Helsinki, December 2020</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/laru.jpg" width="100%" />
+                <figcaption><a href="Images/laru.jpg">Sunrise in Lauttasaari Helsinki, December 2020</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/larunsillalta.jpg" width="100%" />
+                <figcaption><a href="Images/larunsillalta.jpg">Amazing sunset from Lauttasaari bridge, December 2020</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/larusunrise.jpg" width="100%" />
+                <figcaption><a href="Images/larusunrise.jpg">Sunrise in Lauttasaari, Helsinki</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/petrolbeanie.jpg" width="100%" />
+                <figcaption><a href="Images/petrolbeanie.jpg">Handmade beanie for my mom</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/voimamiessukat.jpg" width="100%" />
+                <figcaption><a href="Images/voimamiessukat.jpg">Handmade strongman socks</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/yellowbeanieheadband.jpg" width="100%" />
+                <figcaption><a href="Images/yellowbeanieheadband.jpg">Handmade yellow beanie and headband</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/tampereraatihuone.jpg" width="100%" />
+                <figcaption><a href="Images/tampereraatihuone.jpg">Tampere City Hall, Christmas 2020</a></figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/keskustori.jpg" width="100%" />
+                <figcaption><a href="Images/keskustori.jpg">Tampere Keskustori Christmas lights, 2020</a></figcaption>
+            </figure>
+        </div>
+    </div>
+    <script src="JS/hammer.min.js"></script>
+    <!-- for swipe support on touch interfaces -->
+    <script src="JS/better-simple-slideshow.min.js"></script>
+    <script>
+        var opts = {
+            auto: {
+                speed: 3500,
+                pauseOnHover: true
+            },
+            fullScreen: false,
+            swipe: true
+        };
+        makeBSS('.num1', opts);
+    </script>
+</body>
+
+</html>

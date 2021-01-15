@@ -1,0 +1,142 @@
+#blog {
+    margin-top: 30px;
+    border-top: 1px solid darkgrey;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+#htitle {
+    background-image: url(../Images/pexels-trang-doan-1128678.jpg);
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    margin-top: 30px;
+    opacity: 0.5;
+}
+
+#htext {
+    padding-top: 50px;
+    height: 150px;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+#htext p {
+    opacity: 1;
+}
+
+#htitle:hover {
+    opacity: 1;
+    color: white;
+}
+
+#allPosts {
+    float: left;
+    width: 75%;
+}
+
+#rightColumn {
+    float: left;
+    width: 25%;
+    height: 250px;
+    padding-left: 20px;
+    margin-top: 70px;
+}
+
+#allPosts .card {
+    border-bottom: 1px solid darkgrey;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card img {
+    border: 20px solid white;
+}
+
+.card,
+.popularPosts {
+    padding: 10px;
+}
+
+.popular:hover {
+    background-color: #3CB3C3;
+    color: white;
+}
+
+#blog:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.popularPosts {
+    height: 100%;
+    background-color: #C4E8ED;
+    padding-right: 0;
+    color: #0C2427;
+}
+
+.popularPosts h3 {
+    padding-top: 10px;
+    margin: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid darkgrey;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+li {
+    height: 60px;
+    padding-top: 10px;
+}
+
+.popularPosts a {
+    text-decoration: none;
+    color: #0C2427;
+    width: 100%;
+    padding: 12px;
+}
+
+footer {
+    background-color: #2A7E89;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    font-size: 120%;
+    height: 50px;
+}
+
+#toTop {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 80%;
+    padding-right: 20px;
+}
+
+@media screen and (max-width:800px) {
+    #allPosts,
+    #rightColumn {
+        width: 100%;
+        padding: 0;
+    }
+    #rightColumn {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    ol {
+        padding-inline-start: 0px;
+    }
+}

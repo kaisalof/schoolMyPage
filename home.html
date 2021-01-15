@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kaisa Löfman</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="author" content="Kaisa Löfman">
+    <meta name="description" content="I'm Kaisa Löfman, I have my final year studies left in Software Engineering. 
+        This is my page where I share my skills and little bit something about my hobbies too.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/homestyles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kaisa Löfman</h1>
+        <div class="menu">
+            <a href="home.html" id="menuHome">Home</a>
+            <a href="skills.html" id="menuSkills">Skills</a>
+            <a href="projects.html" id="menuProjects">Projects</a>
+            <a href="gallery.html" id="menuGallery">Gallery</a>
+            <a href="blog.html" id="menuBlog">Blog</a>
+            <a href="contact.html" id="menuContact">Contact</a>
+        </div>
+    </header>
+
+    <div class="homePage">
+        <div id="introduction">
+            <div id="homeImg">
+                <img src="Images/profile.jpg" alt="Profile of Kaisa">
+            </div>
+            <div id="homeText">
+                <p>Hi! I'm Kaisa. <br><br> I'm studying my final year of Information and Communications Technology at Metropolia University of Applied Sciences. My major is smart systems and software.<br> My foremost interest is in front-end development
+                    and UI. I'm very visual person so design-minded developer is something that describes me very well.<br><br> I am interested in well-being, sports and healthy lifestyle. I LOVE to workout and lift heavy weights in the gym.
+                    <br>Also I do lots of handicraft. Knitting is my thing but I like to do with my hands other stuff too like paint, sew, crochet...<br><br> I like to listen to music, read books, watch movies, cook. Basically I'm always on the move :D</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Current date and time is shown in the bottom in footer.-->
+    <footer id="homefooter">
+        <script>
+            var d = new Date(),
+                day = d.getDate(),
+                month = d.getMonth() + 1,
+                year = d.getFullYear(),
+                hour = d.getHours(),
+                minute = d.getMinutes();
+            if (minute < 10) {
+                minute = "0" + minute;
+            }
+            document.write(day + "/" + month + "/" + year + " " + hour + ":" + minute)
+        </script>
+
+    </footer>
+</body>
+
+</html>
